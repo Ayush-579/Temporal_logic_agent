@@ -1,0 +1,16 @@
+langchain>=0.2.0
+transformers>=4.0.0
+python-dotenv>=1.0.0
+torch>=2.0.0
+accelerate>=0.30.0
+sentence-transformers
+neo4j
+networkx
+matplotlib
+pandas
+python-dateutil
+duckduckgo-search
+pypdf
+networkx
+pytesseract
+pdf2image

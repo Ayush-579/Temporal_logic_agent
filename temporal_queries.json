@@ -1,0 +1,178 @@
+{
+  "temporal_queries": [
+    {
+      "id": 1,
+      "question": "Is the Protocol active on 2096-07-01?",
+      "expected": {
+        "active": false,
+        "reason": "The Protocol is effective 45 days after Presidential Certification, and certification has not occurred, so it is not yet active on 2096-07-01."
+      }
+    },
+    {
+      "id": 2,
+      "question": "When does the Protocol become effective if Presidential Certification is issued on 2096-08-01?",
+      "expected": {
+        "status": "scheduled",
+        "effective_date": "2096-09-15",
+        "reason": "The Protocol becomes effective 45 days after Presidential Certification on 2096-08-01, which is 2096-09-15."
+      }
+    },
+    {
+      "id": 3,
+      "question": "When is full compliance with the Protocol required if Presidential Certification is issued on 2096-08-01?",
+      "expected": {
+        "status": "required",
+        "compliance_deadline": "2096-10-15",
+        "reason": "Full compliance is required within 30 days of the Protocol’s effective date, which is 45 days after certification; 45 + 30 = 75 days after 2096-08-01."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Is Topic 12 active on 2096-12-31 if Presidential Certification has not occurred?",
+      "expected": {
+        "active": false,
+        "reason": "Topic 12 is effective upon Presidential Certification; with no certification date, it remains pending and inactive."
+      }
+    },
+    {
+      "id": 5,
+      "question": "When does Topic 12 become effective if Presidential Certification is issued on 2096-10-10?",
+      "expected": {
+        "status": "effective",
+        "effective_date": "2096-10-10",
+        "reason": "Topic 12 becomes effective upon Presidential Certification, so its effective date equals the certification date."
+      }
+    },
+    {
+      "id": 6,
+      "question": "When does Topic 22 become effective if Presidential Certification is issued on 2096-10-10?",
+      "expected": {
+        "status": "scheduled",
+        "effective_date": "2096-11-24",
+        "reason": "Topic 22 is effective 45 days after Topic 12 takes effect; Topic 12 is effective on 2096-10-10, so Topic 22 becomes effective on 2096-11-24."
+      }
+    },
+    {
+      "id": 7,
+      "question": "What is the effective date of Topic 22 if Presidential Certification has not occurred?",
+      "expected": {
+        "status": "pending",
+        "effective_date": null,
+        "reason": "Topic 22 depends on Topic 12, which depends on Presidential Certification. With no certification date, Topic 22 has no computable effective date and remains pending."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Is Topic 22 active on 2097-01-01 if Presidential Certification has not occurred?",
+      "expected": {
+        "active": false,
+        "reason": "Because Presidential Certification has not occurred, Topic 12 and Topic 22 never become effective; Topic 22 is not active on 2097-01-01."
+      }
+    },
+    {
+      "id": 9,
+      "question": "What is the deadline for filing Form ZC-Q if the quarter ends on 2096-09-30?",
+      "expected": {
+        "deadline": "2096-10-30",
+        "reason": "Quarterly Zone-C Reports must be filed within 30 days of quarter end; 30 days after 2096-09-30 is 2096-10-30."
+      }
+    },
+    {
+      "id": 10,
+      "question": "What is the deadline for updating Form ADV-ZC after a material change on 2096-04-01?",
+      "expected": {
+        "deadline": "2096-05-01",
+        "reason": "Registrations must be updated within 30 days of material changes; 30 days after 2096-04-01 is 2096-05-01."
+      }
+    },
+    {
+      "id": 11,
+      "question": "On what date is the annual Zone-C Advisor registration renewal due each year?",
+      "expected": {
+        "recurrence": "annual",
+        "due_date_pattern": "June 30 each year",
+        "reason": "Zone-C registrations expire annually on June 30, so renewal is due on June 30 every year."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Are monthly account statements required as of the Protocol’s effective date?",
+      "expected": {
+        "active": true,
+        "trigger": "Protocol effective",
+        "reason": "Monthly statements are an ongoing obligation in the custody section and become binding once the Protocol is effective."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Is a Zone-C Advisor required to file an event report for a qualifying incident occurring on 2096-03-10, and what is the timing requirement?",
+      "expected": {
+        "required": true,
+        "timing": "immediate",
+        "reason": "Event Reporting requires immediate reporting for specified incidents; a qualifying incident on 2096-03-10 must be reported without delay."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Until what date must Zone-C records be retained for a record created on 2096-01-01?",
+      "expected": {
+        "retention_until": "2106-01-01",
+        "reason": "Zone-C records must be retained for at least 10 years; a record dated 2096-01-01 must be kept until 2106-01-01."
+      }
+    },
+    {
+      "id": 15,
+      "question": "When does Benefit X status terminate if an investor’s Zone-C asset levels fall below the threshold starting on 2096-05-01 and remain below for six consecutive months?",
+      "expected": {
+        "termination_date": "2096-11-01",
+        "reason": "Benefit X terminates if asset levels fall below the threshold for 6 consecutive months; six months after 2096-05-01 is 2096-11-01."
+      }
+    },
+    {
+      "id": 16,
+      "question": "If Presidential Certification is issued on 2096-08-01, by what date must investors claiming Benefit X file supplemental reports required within 45 days of certification?",
+      "expected": {
+        "deadline": "2096-09-15",
+        "reason": "Benefit X investors must file supplemental reports within 45 days of Presidential Certification; 45 days after 2096-08-01 is 2096-09-15."
+      }
+    },
+    {
+      "id": 17,
+      "question": "On which dates are quarterly Form ZC-Q reports due for a firm with standard calendar quarters ending 03-31, 06-30, 09-30, and 12-31 in 2096?",
+      "expected": {
+        "deadlines": [
+          "2096-04-30",
+          "2096-07-30",
+          "2096-10-30",
+          "2097-01-30"
+        ],
+        "reason": "Each Form ZC-Q is due within 30 days of quarter end for Q1, Q2, Q3, and Q4 respectively."
+      }
+    },
+    {
+      "id": 18,
+      "question": "From what date do late filing penalties begin to accrue if a required filing is due on 2096-06-15 and submitted on 2096-06-20?",
+      "expected": {
+        "late_from": "2096-06-16",
+        "days_late": 5,
+        "reason": "Late penalties begin accruing the day after the deadline; a filing due 2096-06-15 but submitted 2096-06-20 is 5 days late starting 2096-06-16."
+      }
+    },
+    {
+      "id": 19,
+      "question": "If Presidential Certification is never issued, when does the Protocol’s pending status end?",
+      "expected": {
+        "status": "pending_indefinitely",
+        "reason": "The effective date is defined relative to Presidential Certification. If certification never occurs, the Protocol remains in pending status with no effective date."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Is Topic 22 ever active if Presidential Certification is never issued?",
+      "expected": {
+        "active": false,
+        "reason": "Topic 22 depends on Topic 12, which is effective only upon Presidential Certification. Without certification, Topic 22 never becomes active."
+      }
+    }
+  ]
+}

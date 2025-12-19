@@ -1,0 +1,33 @@
+line_number,topic_context,expression_type,raw_text,normalized_value
+3,GLOBAL,absolute_date,"July 1, 2096","July 1, 2096"
+3,GLOBAL,relative,45 days after,45 days after
+3,GLOBAL,conditional,after Presidential Certification,after Presidential Certification
+49,3.3,sunset,expire:,expire:
+50,3.3,absolute_date,June 30th,June 30th
+50,3.3,recurring,Annually,Annually
+53,3.3,sunset,lapses per Section 5,lapses per Section 5
+67,4.2,recurring,quarterly,quarterly
+86,5.2,recurring,Quarterly,Quarterly
+145,SECTION 8,sunset,terminates if:,terminates if:
+151,9.1,recurring,Quarterly,Quarterly
+153,9.1,sunset,end,end
+158,9.2,recurring,annually,annually
+213,12.1,conditional,upon Presidential Certification,upon Presidential Certification
+215,12.1,relative,45 days after,45 days after
+215,12.1,conditional,after Presidential Certification,after Presidential Certification
+216,12.1,conditional,If certification,If certification
+217,12.1,conditional,pending certification,pending certification
+222,12.2,conditional,upon certification,upon certification
+237,12.3,conditional,upon certification,upon certification
+255,13.2,recurring,Monthly,Monthly
+255,13.2,recurring,quarterly,quarterly
+356,16.3,recurring,weekly,weekly
+361,16.3,recurring,Quarterly,Quarterly
+371,16.3,relative,45 days after,45 days after
+405,16.3,recurring,quarterly,quarterly
+408,16.3,recurring,quarterly,quarterly
+409,16.3,sunset,END OF DOCUMENT,END OF DOCUMENT
+411,16.3,absolute_date,"May 15, 2096","May 15, 2096"
+412,16.3,relative,45 days after,45 days after
+412,16.3,conditional,after Presidential Certification,after Presidential Certification
+413,16.3,conditional,PENDING CERTIFICATION,PENDING CERTIFICATION
